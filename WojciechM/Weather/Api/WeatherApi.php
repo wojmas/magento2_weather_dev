@@ -10,7 +10,7 @@ class WeatherApi
     //todo more security checking etc, but keep it simple, split const conf into configuration file
     const REQUEST_TIMEOUT = 2000;
     const END_POINT_URL = 'api.openweathermap.org/data/2.5/weather?q=Lublin,pl&lang=pl&units=metric';
-    const API_KEY = 'YOUR API KEY HERE';
+    const API_KEY = '4fb738f0b2a9328569c66c8203c14f8b';
 
     private $response;
 
