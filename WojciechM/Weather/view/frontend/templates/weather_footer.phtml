@@ -1,0 +1,19 @@
+<?php
+
+/** @var \WojciechM\Weather\Block\WeatherFooterBlock $block */
+$result = $block->getActualWeather()->getData();
+
+$temp_min = $result['temp_min'];
+$temp_max = $result['temp_max'];
+$humid = $result['humidity'];
+$press = $result['pressure'];
+$windSpeed = $result['wind_speed'];
+$clouds = $result['clouds'];
+
+?>
+<div>
+    <?php echo "Pogoda w Lublinie:" . '<br>' .
+        "Minimalna przewidywana temperatura to $temp_min Celciusza, natomiast maksymalna $temp_max." . '<br>' .
+        "Wilgotność wynosi $humid% a cisnienie $press, wiatr wieje z prędkością $windSpeed, możemy zaobserwować $clouds% zachmurzenie"; ?>';
+</div>
+
